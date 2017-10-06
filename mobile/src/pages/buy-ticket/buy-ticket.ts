@@ -20,6 +20,7 @@ export class BuyTicketPage {
   ticketTime: Date;
   ticketFrom: String;
   ticketTo: String;
+  busCode: string;
   storage: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner:BarcodeScanner) {
@@ -41,11 +42,13 @@ export class BuyTicketPage {
         this.ticketTime = new Date(parseInt(dataArr[1]));
         this.ticketFrom = dataArr[2];
         this.ticketTo = dataArr[3];
+        this.busCode = dataArr[4];
         let ticket = {
           code: this.ticketCode,
           time: this.ticketTime,
           from: this.ticketFrom,
-          to: this.ticketTo
+          to: this.ticketTo,
+          busCode: this.busCode
         };
         console.log(ticket);
         this.storage.boughtTickets.unshift(ticket);

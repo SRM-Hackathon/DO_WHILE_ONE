@@ -24,6 +24,7 @@ export class HomePage {
     this.storage = {
       boughtTickets: [],
       issuedTickets: {},
+      persist: pstorage
     };
 
     let self = this;

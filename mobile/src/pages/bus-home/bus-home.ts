@@ -19,9 +19,18 @@ import { ValidateTicketPage } from '../validate-ticket/validate-ticket';
 export class BusHomePage {
 
   storage: any;
+  busNumber: string;
+  busCode: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.storage = this.navParams.get('storage');
+    this.busNumber = '';
+    this.busCode = '';
+
+    this.storage.persist.get('busCode').then((code) => {
+      this.busNumber = code;
+      this.setBusNumber();
+    })
   }
 
   ionViewDidLoad() {
@@ -38,6 +47,12 @@ export class BusHomePage {
     this.navCtrl.push(ValidateTicketPage, {
       storage: this.storage
     });
+  }
+
+  setBusNumber() {
+    this.busCode = this.busNumber;
+    this.storage.busCode = this.busCode;
+    this.storage.persist.set('busCode', this.busCode);
   }
 
 }

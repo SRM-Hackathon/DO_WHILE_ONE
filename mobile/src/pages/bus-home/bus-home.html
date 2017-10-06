@@ -15,12 +15,27 @@
 
 <ion-content padding>
 
-  <ion-row>
+  <ion-row *ngIf="!busCode">
+    <ion-col>
+      <ion-item>
+        <ion-label floating>Enter Bus Number</ion-label>
+        <ion-input type="text" [(ngModel)]="busNumber"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row *ngIf="!busCode">
+    <ion-col>
+      <button ion-button block large (click)="setBusNumber()">Submit</button>
+    </ion-col>
+  </ion-row>
+ 
+  <ion-row *ngIf="busCode">
     <ion-col>
       <button ion-button block large (click)="issueTicket()">Issue Ticket</button>
     </ion-col>
   </ion-row>
-  <ion-row>
+  <ion-row *ngIf="busCode">
     <ion-col>
       <button ion-button block large (click)="validateTicket()">Validate Ticket</button>
     </ion-col>
