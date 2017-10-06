@@ -33,7 +33,7 @@ export class ValidateTicketPage {
     console.log('ionViewDidLoad ValidateTicketPage');
     if (!this.ticketCode) {
       this.barcodeScanner.scan({
-        formats: "QR_CODE,PDF_417",
+        formats: "QR_CODE",
         resultDisplayDuration: 0,
       }).then((data) => {
         this.ticketCode = data.text;

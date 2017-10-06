@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BuyTicketPage } from '../buy-ticket/buy-ticket';
 import { ShowTicketPage } from '../show-ticket/show-ticket';
+import { GetBusInfoPage } from '../get-bus-info/get-bus-info';
 
 
 /**
@@ -40,4 +41,9 @@ export class PassengerHomePage {
     });
   }
 
+  getBusInfo() {
+    this.navCtrl.push(GetBusInfoPage, {
+      storage: this.storage
+    });
+  }
 }

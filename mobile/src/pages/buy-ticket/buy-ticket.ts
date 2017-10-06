@@ -17,6 +17,9 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 export class BuyTicketPage {
 
   ticketCode: String;
+  ticketTime: Date;
+  ticketFrom: String;
+  ticketTo: String;
   storage: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner:BarcodeScanner) {
@@ -28,20 +31,24 @@ export class BuyTicketPage {
     console.log('ionViewDidLoad BuyTicketPage');
     if (!this.ticketCode) {
       this.barcodeScanner.scan({
-        formats: "QR_CODE,PDF_417",
+        formats: "QR_CODE",
         resultDisplayDuration: 0,
       }).then((data) => {
         this.ticketCode = data.text;
         let dataArr = this.ticketCode.split(';');
         console.log(dataArr);
+        this.ticketCode = dataArr[0];
+        this.ticketTime = new Date(parseInt(dataArr[1]));
+        this.ticketFrom = dataArr[2];
+        this.ticketTo = dataArr[3];
         let ticket = {
-          code: dataArr[0],
-          time: new Date(parseInt(dataArr[1])),
-          from: dataArr[2],
-          to: dataArr[3]
+          code: this.ticketCode,
+          time: this.ticketTime,
+          from: this.ticketFrom,
+          to: this.ticketTo
         };
         console.log(ticket);
-        this.storage.boughtTickets.push(ticket);
+        this.storage.boughtTickets.unshift(ticket);
       });
     }
   }

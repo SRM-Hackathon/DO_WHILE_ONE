@@ -15,6 +15,7 @@ import { IssueTicketPage } from '../pages/issue-ticket/issue-ticket';
 import { BuyTicketPage } from '../pages/buy-ticket/buy-ticket';
 import { ShowTicketPage } from '../pages/show-ticket/show-ticket';
 import { ValidateTicketPage } from '../pages/validate-ticket/validate-ticket';
+import { GetBusInfoPage } from '../pages/get-bus-info/get-bus-info';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ValidateTicketPage } from '../pages/validate-ticket/validate-ticket';
     IssueTicketPage,
     BuyTicketPage,
     ShowTicketPage,
-    ValidateTicketPage
+    ValidateTicketPage,
+    GetBusInfoPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { ValidateTicketPage } from '../pages/validate-ticket/validate-ticket';
     IssueTicketPage,
     BuyTicketPage,
     ShowTicketPage,
-    ValidateTicketPage
+    ValidateTicketPage,
+    GetBusInfoPage
   ],
   providers: [
     StatusBar,

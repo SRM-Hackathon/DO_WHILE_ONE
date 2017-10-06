@@ -38,15 +38,6 @@ export class HomePage {
     });
   }
 
-  scanIt() {
-    this.barcodeScanner.scan({
-      formats : "QR_CODE,PDF_417",
-      resultDisplayDuration: 0,
-    }).then((data) => {
-      this.barData = data.text;
-    })
-  }
-
   passenger() {
     this.userType = 'passenger';
     this.pstorage.set('userType', this.userType);

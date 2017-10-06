@@ -28,12 +28,11 @@ export class IssueTicketPage {
     this.ticketFrom = 'Stop A';
     this.ticketTo = 'Stop C';
     this.code = Md5.hashStr(Math.random().toString(), false).toString();
-    this.ticketCode =  this.code
-                        + ';' + (this.ticketTime.getTime().toString())
+    this.ticketCode =  this.code + ';' + (this.ticketTime.getTime().toString())
                         + ';' +  this.ticketFrom + ';' + this.ticketTo  ;
 
     console.log(this.ticketCode);
-    
+
     this.storage = this.navParams.get('storage');
     this.storage.issuedTickets[this.code] = {
       code: this.code,

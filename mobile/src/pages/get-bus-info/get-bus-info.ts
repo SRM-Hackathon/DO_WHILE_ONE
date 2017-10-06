@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
 /**
  * Generated class for the GetBusInfoPage page.
@@ -15,11 +16,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class GetBusInfoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  busCode: string;
+  isValid: boolean;
+  message: string;
+  storage: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner: BarcodeScanner) {
+    this.busCode = '';
+    this.storage = this.navParams.get('storage');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad GetBusInfoPage');
+    if (!this.busCode) {
+      this.barcodeScanner.scan({
+        formats: "QR_CODE",
+        resultDisplayDuration: 0,
+      }).then((data) => {
+        this.busCode = data.text;
+      });
+    }
   }
 
 }
