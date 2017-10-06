@@ -48,7 +48,8 @@ import { ValidateTicketPage } from '../pages/validate-ticket/validate-ticket';
     StatusBar,
     SplashScreen,
     BarcodeScanner,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    Storage
   ]
 })
 export class AppModule {}

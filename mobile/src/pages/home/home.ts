@@ -29,6 +29,7 @@ export class HomePage {
     let self = this;
     pstorage.get('userType').then((val) => {
       self.userType = val;
+      val = '';
       if (val === 'bus') {
         this.bus();
       } else if (val === 'passenger') {
@@ -49,7 +50,7 @@ export class HomePage {
   passenger() {
     this.userType = 'passenger';
     this.pstorage.set('userType', this.userType);
-    this.navCtrl.push(PassengerHomePage, {
+    this.navCtrl.setRoot(PassengerHomePage, {
       storage: this.storage
     });
   }
@@ -57,7 +58,7 @@ export class HomePage {
   bus() {
     this.userType = 'bus';
     this.pstorage.set('userType', this.userType);
-    this.navCtrl.push(BusHomePage, {
+    this.navCtrl.setRoot(BusHomePage, {
       storage: this.storage
     });
   }
