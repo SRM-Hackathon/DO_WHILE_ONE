@@ -6,6 +6,7 @@ import { BuyTicketPage } from '../buy-ticket/buy-ticket';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { Storage } from '@ionic/storage';
 
 
 @Component({
@@ -16,13 +17,24 @@ export class HomePage {
 
   barData: String;
   storage: any;
+  userType: string;
 
-  constructor(public navCtrl: NavController, private barcodeScanner:BarcodeScanner) {
+  constructor(public navCtrl: NavController, private barcodeScanner:BarcodeScanner, private pstorage: Storage) {
     this.barData = "";
     this.storage = {
       boughtTickets: [],
-      issuedTickets: []
+      issuedTickets: {},
     };
+
+    let self = this;
+    pstorage.get('userType').then((val) => {
+      self.userType = val;
+      if (val === 'bus') {
+        this.bus();
+      } else if (val === 'passenger') {
+        this.passenger();
+      }
+    });
   }
 
   scanIt() {
@@ -35,12 +47,16 @@ export class HomePage {
   }
 
   passenger() {
+    this.userType = 'passenger';
+    this.pstorage.set('userType', this.userType);
     this.navCtrl.push(PassengerHomePage, {
       storage: this.storage
     });
   }
 
   bus() {
+    this.userType = 'bus';
+    this.pstorage.set('userType', this.userType);
     this.navCtrl.push(BusHomePage, {
       storage: this.storage
     });

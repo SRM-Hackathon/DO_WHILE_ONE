@@ -24,6 +24,8 @@ export class ShowTicketPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.storage = this.navParams.get('storage');
 
+    console.log(this.storage.boughtTickets);
+
     if (this.storage.boughtTickets.length > 0) {
       let latestTicket = this.storage.boughtTickets[0];
       this.ticketCode = latestTicket.code;

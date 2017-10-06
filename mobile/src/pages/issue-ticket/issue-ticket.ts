@@ -16,25 +16,31 @@ import {Md5} from 'ts-md5/dist/md5';
 })
 export class IssueTicketPage {
 
-  ticketCode: String;
+  ticketCode: string;
   ticketTime: Date;
-  ticketFrom: String;
-  ticketTo: String;
+  ticketFrom: string;
+  ticketTo: string;
   storage: any;
+  code: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.ticketCode = Md5.hashStr(Math.random().toString(), false).toString();
     this.ticketTime = new Date();
     this.ticketFrom = 'Stop A';
     this.ticketTo = 'Stop C';
+    this.code = Md5.hashStr(Math.random().toString(), false).toString();
+    this.ticketCode =  this.code
+                        + ';' + (this.ticketTime.getTime().toString())
+                        + ';' +  this.ticketFrom + ';' + this.ticketTo  ;
 
+    console.log(this.ticketCode);
+    
     this.storage = this.navParams.get('storage');
-    this.storage.issuedTickets.push({
-      code: this.ticketCode,
+    this.storage.issuedTickets[this.code] = {
+      code: this.code,
       time: new Date(),
-      from: 'Stop A',
-      to: 'Stop C'
-    });
+      from: this.ticketFrom,
+      to: this.ticketTo
+    };
   }
 
   ionViewDidLoad() {
