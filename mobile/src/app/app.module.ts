@@ -12,6 +12,7 @@ import { BusHomePage } from '../pages/bus-home/bus-home';
 import { PassengerHomePage } from '../pages/passenger-home/passenger-home';
 import { IssueTicketPage } from '../pages/issue-ticket/issue-ticket';
 import { BuyTicketPage } from '../pages/buy-ticket/buy-ticket';
+import { ShowTicketPage } from '../pages/show-ticket/show-ticket';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BuyTicketPage } from '../pages/buy-ticket/buy-ticket';
     BusHomePage,
     PassengerHomePage,
     IssueTicketPage,
-    BuyTicketPage
+    BuyTicketPage,
+    ShowTicketPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { BuyTicketPage } from '../pages/buy-ticket/buy-ticket';
     BusHomePage,
     PassengerHomePage,
     IssueTicketPage,
-    BuyTicketPage
+    BuyTicketPage,
+    ShowTicketPage
   ],
   providers: [
     StatusBar,

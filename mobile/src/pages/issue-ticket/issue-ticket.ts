@@ -17,15 +17,24 @@ import {Md5} from 'ts-md5/dist/md5';
 export class IssueTicketPage {
 
   ticketCode: String;
-  ticketTime: String;
+  ticketTime: Date;
   ticketFrom: String;
   ticketTo: String;
+  storage: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.ticketCode = Md5.hashStr(Math.random().toString(), false).toString();
-    this.ticketTime = '4:30 PM 06/10/17';
-    this.ticketFrom = 'Station A';
-    this.ticketTo = 'Station B';
+    this.ticketTime = new Date();
+    this.ticketFrom = 'Stop A';
+    this.ticketTo = 'Stop C';
+
+    this.storage = this.navParams.get('storage');
+    this.storage.issuedTickets.push({
+      code: this.ticketCode,
+      time: new Date(),
+      from: 'Stop A',
+      to: 'Stop C'
+    });
   }
 
   ionViewDidLoad() {

@@ -1,4 +1,4 @@
-<ion-header class="bar">
+<ion-header>
   <ion-navbar>
     <ion-title>
       Ionic Blank
@@ -7,13 +7,15 @@
 </ion-header>
 
 <ion-content padding class="has-header">
-  <p>
-    <button ion-button (click)="scanIt()">Scan Barcode</button>
-    <button ion-button (click)="passenger()">Passenger Home</button>
-    <button ion-button (click)="bus()">Bus Home</button>
-  </p>
-  <p>
-    Bar Data: {{barData}}
-  </p>
-  <ngx-qrcode [qrc-value]="'createdCode'"></ngx-qrcode>
+  <ion-row>
+    <ion-col>
+      <button ion-button block large (click)="passenger()">Passenger Home</button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button block large (click)="bus()">Bus Home</button>
+    </ion-col>
+  </ion-row>
 </ion-content>

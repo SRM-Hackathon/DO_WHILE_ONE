@@ -17,7 +17,10 @@ import { IssueTicketPage } from '../issue-ticket/issue-ticket';
 })
 export class BusHomePage {
 
+  storage: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.storage = this.navParams.get('storage');
   }
 
   ionViewDidLoad() {
@@ -25,7 +28,9 @@ export class BusHomePage {
   }
 
   issueTicket() {
-    this.navCtrl.push(IssueTicketPage);
+    this.navCtrl.push(IssueTicketPage, {
+      storage: this.storage
+    });
   }
 
   validateTicket() {

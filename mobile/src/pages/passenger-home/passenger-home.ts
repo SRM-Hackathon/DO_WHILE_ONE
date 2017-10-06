@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BuyTicketPage } from '../buy-ticket/buy-ticket';
+import { ShowTicketPage } from '../show-ticket/show-ticket';
 
 
 /**
@@ -17,7 +18,10 @@ import { BuyTicketPage } from '../buy-ticket/buy-ticket';
 })
 export class PassengerHomePage {
 
+  storage: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.storage = this.navParams.get('storage');
   }
 
   ionViewDidLoad() {
@@ -25,11 +29,15 @@ export class PassengerHomePage {
   }
 
   buyTicket() {
-    this.navCtrl.push(BuyTicketPage);
+    this.navCtrl.push(BuyTicketPage, {
+      storage: this.storage
+    });
   }
 
   showTicket() {
-
+    this.navCtrl.push(ShowTicketPage, {
+      storage: this.storage
+    });
   }
 
 }

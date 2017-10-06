@@ -15,9 +15,14 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 export class HomePage {
 
   barData: String;
+  storage: any;
 
   constructor(public navCtrl: NavController, private barcodeScanner:BarcodeScanner) {
     this.barData = "";
+    this.storage = {
+      boughtTickets: [],
+      issuedTickets: []
+    };
   }
 
   scanIt() {
@@ -30,11 +35,15 @@ export class HomePage {
   }
 
   passenger() {
-    this.navCtrl.push(PassengerHomePage);
+    this.navCtrl.push(PassengerHomePage, {
+      storage: this.storage
+    });
   }
 
   bus() {
-    this.navCtrl.push(BusHomePage);
+    this.navCtrl.push(BusHomePage, {
+      storage: this.storage
+    });
   }
 
   ionViewWillEnter() {

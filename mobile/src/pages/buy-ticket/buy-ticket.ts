@@ -17,9 +17,11 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 export class BuyTicketPage {
 
   ticketCode: String;
+  storage: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner:BarcodeScanner) {
     this.ticketCode = '';
+    this.storage = this.navParams.get('storage');
   }
 
   ionViewDidLoad() {
@@ -30,6 +32,13 @@ export class BuyTicketPage {
         resultDisplayDuration: 0,
       }).then((data) => {
         this.ticketCode = data.text;
+        this.storage.boughtTickets.push({
+          code: this.ticketCode,
+          time: new Date(),
+          from: 'Stop A',
+          to: 'Stop C'
+        });
+
       })
     }
   }
