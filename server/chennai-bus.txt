@@ -1,0 +1,71 @@
+7H |[[Mogappair|Dr. J. J. Nagar East]] |[[Broadway, Chennai|Broadway]] / [[Fort St. George, India|Secretariat]] / [[Madras High Court|High Court]] |Police Station, Collector Nagar, Thirumangalam, Roundana, Chinthamani, Kilpauk Garden Road, Kellys, Purasawalkam, Chennai Central |-
+147A |[[Mogappair|Dr. J. J. Nagar East]] |[[T.Nagar]] |Police Station, Collector Nagar, Thirumangalam, SKYWALK, Choolaimedu (Nungambakkam railway station), Pushpa Nagar, Valluvar Kottam, Panagal Park |-
+27N |[[Mogappair|Dr. J. J. Nagar East]] |[[Anna Memorial|Anna Square]] |Police Station, Collector Nagar, Thirumangalam, SKYWALK, DPI, LIC, Chepauk Cricket Stadium, Triplicane |-
+M70 |[[Mogappair|Dr. J. J. Nagar East]] |[[Thiruvanmiyur]] |Police Station, Collector Nagar, Thirumangalam, CMBT, Vadapalani, Ashok Nagar, Guindy Thiru Vi Ka Estate, Guru Nanak College, Velachery, Taramani, SRP Tools |-
+7M |[[Mogappair|Dr. J. J. Nagar West]] |[[Broadway, Chennai|Broadway]] |Vavin, Collector Nagar, Thirumangalam, Roundana, Chinthamani, Kilpauk Garden Road, Kellys, Purasawalkam, Chennai Central |-
+7M |[[Mogappair|Dr. J. J. Nagar West]] |[[Broadway, Chennai|Broadway]] / [[Fort St. George, India|Secretariat]] / [[Madras High Court|High Court]] |Vavin, Collector Nagar, Thirumangalam, Roundana, Chinthamani, Kilpauk Garden Road, Kellys, Purasawalkam, Chennai Central |-
+7M |[[Mogappair|Dr. J. J. Nagar West]] |[[Broadway, Chennai|Broadway]] |Vavin, Collector Nagar, Thirumangalam, Roundana, Chinthamani, Kilpauk Garden Road, Kellys, Purasawalkam, Chennai Central |-
+147B |[[Mogappair|Dr. J. J. Nagar West]] |[[T.Nagar]] |Vavin, Collector Nagar, Thirumangalam, Anna Arch, SKYWALK, Choolaimedu (Nungambakkam railway station), Pushpa Nagar, Valluvar Kottam, Panagal Park |-
+27L |[[Mogappair|Dr. J. J. Nagar West]] |[[Anna Memorial|Anna Square]] |Vavin, Collector Nagar, Thirumangalam, SKYWALK, DPI, LIC, Chepauk, Triplicane |-
+27L |[[Mogappair|Dr. J. J. Nagar West]] |[[Anna Memorial|Anna Square]] |Vavin, Collector Nagar, Thirumangalam, SKYWALK, DPI, LIC, Chepauk, Triplicane |-
+27L |[[Mogappair|Dr. J. J. Nagar West]] |[[Anna Memorial|Anna Square]] |Vavin, Collector Nagar, Thirumangalam, SKYWALK, DPI, LIC, Chepauk, Triplicane |-
+77J |[[Mogappair|Dr. J. J. Nagar West]] |[[Guindy Thiru Vi Ka Estate|Guindy]] |Mogappair Eri Scheme, Mogappair East, J.J.Nagar East Police Station, Collector Nagar, Thirumangalam, CMBT, Vadapalani, Ashok Nagar, Ekkaduthangal, CIPET |-
+70W |[[Mogappair|Dr. J. J. Nagar West]] |[[Velachery]] |Vavin, Collector Nagar, Thirumangalam, CMBT, Vadapalani, Ashok Nagar, Ekkaduthangal, Guindy Thiru Vi Ka Estate, Concorde, Guru Nanak College |-
+48AET |[[Mogappair|Dr. J. J. Nagar West]] |[[Madhavaram]] |Ambattur Industrial Estate, Lucas, Padi, Aynavaram/Sayani, Perambur Railway Station, Moolakadai, Madhavaram Post Office |-
+141C |[[Mogappair|Collector Nagar]] |[[Thiruvanmiyur]] |Collector Nagar, Thirumangalam, Roundana, SKYWALK, D.M.S, Luz Corner, Mylapore, Mandaveli, Adyar Bus Depot |-
+27E |[[Mogappair|Collector Nagar]] |[[Anna Memorial|Anna Square]] |Collector Nagar, Thirumangalam, Roundana, SKYWALK, DPI, LIC, Devi Cineplex, Chepauk Cricket Stadium, Triplicane |-
+77G |[[Mogappair|Collector Nagar]] |[[Guindy Thiru Vi Ka Estate|Guindy]] |Collector Nagar, Thirumangalam, CMBT, Arumbakkam MMDA, Vadapalani, Ashok Nagar, Ekkaduthangal, CIPET |-
+20A |[[Mogappair]] |[[Broadway, Chennai|Broadway]] |Vijaya Bank, Mogappair West, Vavin, Ambattur I.E, Lucas, Padi, Aynavaram/Sayani, Kellys, Dharmaprakash/Petrol Bunk, Chennai Central |-
+7F |[[Anna Nagar West]] |[[Broadway, Chennai|Broadway]] / [[Anna Memorial|Anna Square]] |Thirumangalam, Roundana, Chinthamani, Kilpauk Garden Road, Kelleys, Doveton, Chennai Central |-
+7F |[[Anna Nagar West]] |[[Broadway, Chennai|Broadway]]/[[Madras High Court|High Court]]/[[Fort St. George, India|Secretariat]] |Thirumangalam, Roundana, Chinthamani, Kilpauk Garden Road, Kelleys, Doveton, Chennai Central |-
+7F |[[Anna Nagar West]] |[[Broadway, Chennai|Broadway]] |Thirumangalam, Roundana, Chinthamani, Kilpauk Garden Road, Kelleys, Doveton, Chennai Central |-
+15C |[[Anna Nagar West]] |[[Broadway, Chennai|Broadway]] |Thirumangalam, Roundana, SKYWALK, Sterling Road, DPI, Egmore, Chennai Central |-
+15A |[[Anna Nagar West]] |[[Broadway, Chennai|Broadway]] |Maharani, Brindavan Colony, Kilpauk Garden Road, Kelleys, Doveton, Chennai Central |-
+15D/15 |[[Anna Nagar West]] |[[Broadway, Chennai|Broadway]]/[[Fort St. George, India|Secretariat]] |Maharani, Anna Nagar East, Aminijikarai, Taylors Road, Dasaprakash, Chennai Central |-
+24A |[[Anna Nagar West]] |[[Vivekanandar Illam|Vivekananda House]] |Maharani, Brindavan Colony, Aminjikarai, Taylors Road, Sterling Road, Gemini, Royapettah Hospital |-
+24A |[[Anna Nagar West]] |[[Vivekanandar Illam|Vivekananda House]] |Maharani, Brindavan Colony, Aminjikarai, Taylors Road, Sterling Road, Gemini, Royapettah Hospital |-
+41C |[[Anna Nagar West]] |[[Thiruvanmiyur]] |Thirumangalam, Roundana, Chinthamani, Aminjikarai, Taylors Road, Sterling Road, D.M.S, Luz Corner, Mylapore, Mandaveli, Adyar Bus Depot |-
+27BET |[[Maduravoyal]] |[[Anna Memorial|Anna Square]] |Nerkundram, Rohini Theatre, Arumbakkam, N.S.K Nagar, Aminjikarai, Taylors Road, Egmore, Triplicane.  |-
+53CT |[[Maduravoyal]] |[[Broadway, Chennai|Broadway]] / [[Fort St. George, India|Secretariat]] |Nerkundram, Rohini Theatre, Arumbakkam, N.S.K Nagar, Aminjikarai, Taylors Road, Dasaprakash, Park Railway Station, Chennai Central.  |-
+M70C |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[Tambaram]] |Koyambedu P.S, CMBT, M.M.D.A, Vadapalani, Ashok Pillar, Cipet, Kathipara, Chennai International Airport, Pallavaram, Chrompet, T.B.Sanatorium |-
+M70C |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[Tambaram]] |Koyambedu P.S, CMBT, M.M.D.A, Vadapalani, Ashok Pillar, Cipet, Kathipara, Chennai International Airport, Pallavaram, Chrompet, T.B.Sanatorium |-
+53G |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |Padurmedu |Nerkundram, Maduravoyal, Vaanagaram, Velappanchavadi, Kumunanchavadi, Poonamallee, Varadaraja Puram, Chembarambakkam, Irulapalayam.  |-
+114P |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[Padiyanallur]] |Koyambedu P.S, Thirumangalam, Weels India Rd.Jn., Agrakaram, Ambedkar Nagar, Madhvaram Jn., Puzhal, Kavangarai, Aayurveda Ashramam, Red Hills.  |-
+15F |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[Broadway, Chennai|Broadway]] |Koyambedu P.S, Arumbakkam, D.G.Vaishnav College, N.S.K Nagar, Aminjikarai, Taylors Road, Dasaprakash, Chennai Central.  |-
+15F |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[Broadway, Chennai|Broadway]] |Koyambedu P.S, Arumbakkam, D.G.Vaishnav College, N.S.K Nagar, Aminjikarai, Taylors Road, Dasaprakash, Chennai Central.  |-
+121A |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[[[Manali, Chennai|Manali]]]] |Koyambedu P.S, Thirumangalam, Weels India Rd.Jn., Agrakaram, Ambedkar Nagar, Madhvaram Jn., Madhavaram P.O, Moolakadai, Madhavaram Milk Colony |-
+121A |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[[[Manali, Chennai|Manali]]]] |Koyambedu P.S, Thirumangalam, Weels India Rd.Jn., Agrakaram, Ambedkar Nagar, Madhvaram Jn., Madhavaram P.O, Moolakadai, Madhavaram Milk Colony |-
+121A |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[[[Manali, Chennai|Manali]]]] |Koyambedu P.S, Thirumangalam, Weels India Rd.Jn., Agrakaram, Ambedkar Nagar, Madhvaram Jn., Madhavaram P.O, Moolakadai, Madhavaram Milk Colony |-
+12BET |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[Foreshore Estate]] |Koyambedu P.S, Chinmaya Nagar, Virugambakkam, Vadapalani B.S, Trustpuram, Bharathi Nagar, Pondy Bazaar, F.C.I Old, Luz, Santhome P.O.  |-
+17A |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[Broadway, Chennai|Broadway]] |Koyambedu P.S, Chinmaya Nagar, Virugambakkam, Vadapalani B.S, Trustpuram, Veternary Hospital, Gemini, TVS, P.Or & Sons, Chennai Central.  |-
+46A |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[Villivakkam]] |Koyambedu P.S, Arumbakkam, D.G.Vaishnav College, Anna Arch, Aminjikarai P.S., Roundtana, I.C.F.  |-
+46A |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[Villivakkam]] |Koyambedu P.S, Arumbakkam, D.G.Vaishnav College, Anna Arch, Aminjikarai P.S., Roundtana, I.C.F.  |-
+46GET |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[Mahakavi Bharathi Nagar| M.K.B Nagar East]] |Koyambedu P.S, Arumbakkam, D.G.Vaishnav College, Anna Arch, Aminjikarai P.S., Roundtana, I.C.F, Kambar Arangam, Aynavaram/ Sayani, Jamalia, Perambur R.S, Vyasarpadi.  |-
+120E |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |Kilkondaiyur |Koyambedu P.S, Thirumangalam, Lucas, Ambathur Estate, Dunlop, Ambattur OT, Thirumullaivoyal, Avadi, Koilpathagai Rd.Jn., H.V.F.Main Gate, , Veltech, Veerapuram, Arakkambakkam, Pandeswaram, Kadhavoor Rd.Jn.  |-
+77M |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |Madanakuppam |Koyambedu P.S, Thirumangalam, Collector Nagar, Vavin, Ambathur Estate, Dunlop, Ambattur OT, Pudur, TATA Wireless, Kallikuppam, |-
+17B |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[Mangadu]] |Koyambedu P.S, CMBT, M.M.D.A., Vadapalani B.S, Virugambakkam, Valasaravakkam, Porur, Moulivakkam, Paraniputhur, Mangadu |-
+41F |[[Koyambedu Wholesale Market Complex|Koyambedu Market]] |[[Mandavelli|Mandaiveli]] |Koyambedu P.S, Arumbakkam, D.G.Vaishnav College, SKYWALK, Nungambakkam R.S, Valluvarkottam, D.M.S, F.C.I Old, Luz, Mylapore |-
+44 |[[Manali, Chennai|Manali]] |[[Broadway, Chennai|Broadway]] |Manali Market, MRL(CPCL), Thiruvottriyur Railway Station, Ellaiamman Koil, Kaladipet, Rajakadai, Thangal, Toll gate, Tondiarpet, Maharani, Mint, Beach Station |-
+56D |[[Manali, Chennai|Manali]] |[[Broadway, Chennai|Broadway]] |Manali Market, MRL(CPCL), Thiruvottriyur Railway Station, Ellaiamman Koil, Kaladipet, Rajakadai, Thangal, Toll gate, Tondiarpet, Kasimedu, Kalmandapam, Royapuram, Beach Station |-
+PP56D |[[Manali, Chennai|Manali]] |[[Broadway, Chennai|Broadway]] |Manali Market, MRL(CPCL), Thiruvottriyur Railway Station, Ellaiamman Koil, Kaladipet, Rajakadai, Thangal, Toll gate, Tondiarpet, Kasimedu, Kalmandapam, Royapuram, Beach Station |-
+PP56D |[[Manali, Chennai|Manali]] |[[Broadway, Chennai|Broadway]] |Manali Market, MRL(CPCL), Thiruvottriyur Railway Station, Ellaiamman Koil, Kaladipet, Rajakadai, Thangal, Toll gate, Tondiarpet, Kasimedu, Kalmandapam, Royapuram, Beach Station |-
+64C |[[Manali, Chennai|Manali]] |[[Broadway, Chennai|Broadway]] |Manali Market, Mathur, Madhavaram Milk Colony, Moolakadai, Vyasarpadi, Doveton, Chennai Central |-
+64C |[[Manali, Chennai|Manali]] |[[Broadway, Chennai|Broadway]] |Chinna Mathur, Mathur MMDA, Madhavaram Milk Colony, Moolakadai, Vyasarpadi, Doveton, Chennai Central |-
+121A |[[Manali, Chennai|Manali]] |[[CMBT]] |Manali Market, Mathur, Madhavaram Milk Colony, Moolakadai, Reteri, Anna Nagar West, Thirumangalam |-
+121A |[[Manali, Chennai|Manali]] |[[CMBT]] |Manali Market, Mathur, Madhavaram Milk Colony, Moolakadai, Reteri, Anna Nagar West, Thirumangalam |-
+156D |[[Manali, Chennai|Manali]] |[[Tondiarpet]] |Manali Market, MRL(CPCL), MFL, Sathyamoorthy Nagar, Ernavoor, Thiruvottriyur Bus Depot, Theradi, Ellaiamman Koil, Kaladipet, Rajakadai, Thangal, Toll gate |-
+164C |[[Manali, Chennai|Manali]] |[[Broadway, Chennai|Broadway]] |Manali Market, Mathur, Manjambakkam, Madhavaram, Moolakadai, Vyasarpadi, Doveton, Chennai Central |-
+170C Extn |[[Manali, Chennai|Manali]] |[[Guindy]] I.E |Manali Market, Mathur, Madhavaram Milk Colony, Moolakadai, Thiru-Vi-Ka Nagar, Kolathur, Reteri, Lucas, Anna Nagar West, Thirumangalam, CMBT, Vadapalani, Ashok Pillar, Ekkatuthangal |-
+170M |[[Manali, Chennai|Manali]] |[[Velachery]] |Manali Market, Mathur, Madhavaram Milk Colony, Moolakadai, Thiru-Vi-Ka Nagar, Kolathur, Reteri, Lucas, Anna Nagar West, Thirumangalam, CMBT, Vadapalani, Ashok Pillar, Ekkatuthangal, Guindy I.E |-
+48B |[[TVK Nagar, Chennai|TVK Nagar]] |[[Ennore]] |Perambur, Moolakadai, Madhavaram, Manjambakkam, Mathur, Manali Market |-
+56D Extn |[[Mathur MMDA]] |[[Broadway, Chennai|Broadway]] |Chinna Mathur, [[Manali, Chennai|Manali]], Manali Market, MRL(CPCL), Thiruvottriyur Railway Station, Ellaiamman Koil, Kaladipet, Rajakadai, Thangal, Toll gate, Tondiarpet, Kasimedu, Kalmandapam, Royapuram, Beach Station |-
+56D Extn |[[Assisi Nagar, Chennai|Assisi Nagar]] |[[Broadway, Chennai|Broadway]] |Chinna Mathur, [[Manali, Chennai|Manali]], Manali Market, MRL(CPCL), Thiruvottriyur Railway Station, Ellaiamman Koil, Kaladipet, Rajakadai, Thangal, Toll gate, Tondiarpet, Kasimedu, Kalmandapam, Royapuram, Beach Station |-
+56V |[[Red Hills, Chennai|Redhills]] |[[Tolgate|Tollgate]] |Grand Lyon, Vadakarai, Vadaperumpakkam, Manjambakkam, Mathur, Manali Market, Kaladipet, Rajakadai |-
+56W |[[Madhavaram]] |[[Vallalar Nagar]] |Madhavaram Milk Colony, Mathur, Manali Market, Kaladipet, Rajakadai |-
+56T |[[Madhavaram]] |[[Tiruvottiyur]] |Madhavaram Milk Colony, Mathur, Manali Market, Theradi |-
+64B |[[Minjur]] |[[Broadway, Chennai|Broadway]] |Napalayam, [[Manali New Town|Manali]] New Town, Manali Market, Mathur, Madhavaram Milk Colony, Moolakadai, Perambur Market, Vyasarpadi, Doveton, Chennai Central |-
+64P |[[Minjur]] |[[Perambur]] |Napalayam, [[Manali New Town|Manali]] New Town, Manali Market, Mathur, Madhavaram Milk Colony, Moolakadai, Perambur Market |-
+121B |[[Minjur]] |[[CMBT]] |Napalayam, [[Manali New Town|Manali]] New Town, Manali Market, Mathur, Madhavaram Milk Colony, Moolakadai, Reteri, Lucas, Anna Nagar West, Thirumangalam |-
+121C |[[Ennore]] |[[CMBT]] |Manali Market, Mathur, Madhavaram Milk Colony, Moolakadai, Reteri, Lucas, Anna Nagar West, Thirumangalam |-
+121D |[[Manali New Town]] |[[CMBT]] |Andarkuppam, Manali Market, Mathur, Madhavaram Milk Colony, Moolakadai, Reteri, Lucas, Anna Nagar West, Thirumangalam 
+

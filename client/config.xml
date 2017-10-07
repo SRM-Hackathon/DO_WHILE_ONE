@@ -3,7 +3,7 @@
     <name>Paperless Tickets</name>
     <description>Paperless Tickets for Transport Busses</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://10.5.58.29:8101" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
