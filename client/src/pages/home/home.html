@@ -1,5 +1,10 @@
 <ion-header>
   <ion-navbar>
+      <ion-buttons left>
+          <button ion-button icon-only>
+            <ion-icon ios="ios-home" md="md-home"></ion-icon>
+          </button>
+      </ion-buttons>
     <ion-title>
       Select Your Role
     </ion-title>
@@ -9,13 +14,19 @@
 <ion-content padding class="has-header">
   <ion-row>
     <ion-col>
-      <button ion-button block large (click)="passenger()">I'am a Passenger</button>
+      <button ion-button block large (click)="passenger()" icon-left>
+            <ion-icon name="ios-person"></ion-icon>
+          I'am a Passenger
+      </button>
     </ion-col>
   </ion-row>
 
   <ion-row>
     <ion-col>
-      <button ion-button block large (click)="bus()">I'am a Bus Ticket Issuer</button>
+      <button ion-button block large (click)="bus()" icon-left>
+            <ion-icon name="md-bus"></ion-icon>
+        Bus Ticket Issuer
+      </button>
     </ion-col>
   </ion-row>
 </ion-content>

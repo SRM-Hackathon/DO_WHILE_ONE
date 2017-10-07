@@ -7,6 +7,11 @@
 <ion-header>
 
   <ion-navbar>
+      <ion-buttons left>
+          <button ion-button icon-only>
+            <ion-icon ios="ios-home" md="md-home"></ion-icon>
+          </button>
+      </ion-buttons>
     <ion-title>Home</ion-title>
   </ion-navbar>
 
@@ -17,7 +22,9 @@
 
   <ion-row>
     <ion-col>
-      <button ion-button block large (click)="buyTicket()">Buy Ticket</button>
+      <button ion-button block large (click)="buyTicket()">
+        Buy Ticket
+      </button>
     </ion-col>
   </ion-row>
   <ion-row>
