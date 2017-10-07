@@ -17,13 +17,20 @@
 
   <ion-row>
     <ion-col>
-      Bus Code: {{busCode}}
+      Bus Number: {{busCode}}
     </ion-col>
   </ion-row>
 
-  <ion-list *ngIf="stopsList.lenght > 0">
+  <ion-list *ngIf="stopsList.length > 0">
     <ion-item *ngFor="let stop of stopsList; let i = index;">
-      {{stop}}
+      <ion-row>
+        <ion-col>
+          {{stop}}
+        </ion-col>
+        <ion-col>
+          Rs. {{ (Math.floor(i/3)+1) * 5 }}.00
+        </ion-col>
+      </ion-row>
     </ion-item>
   </ion-list>
 

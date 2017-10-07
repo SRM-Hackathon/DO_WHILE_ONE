@@ -16,8 +16,11 @@ import { BuyTicketPage } from '../pages/buy-ticket/buy-ticket';
 import { ShowTicketPage } from '../pages/show-ticket/show-ticket';
 import { ValidateTicketPage } from '../pages/validate-ticket/validate-ticket';
 import { GetBusInfoPage } from '../pages/get-bus-info/get-bus-info';
+import { ShowBusBarcodePage } from '../pages/show-bus-barcode/show-bus-barcode';
+
 import { StaticProvider } from '../providers/static/static';
 import { HttpProvider } from '../providers/http/http';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -29,13 +32,15 @@ import { HttpProvider } from '../providers/http/http';
     BuyTicketPage,
     ShowTicketPage,
     ValidateTicketPage,
-    GetBusInfoPage
+    GetBusInfoPage,
+    ShowBusBarcodePage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     NgxQRCodeModule,
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -47,7 +52,8 @@ import { HttpProvider } from '../providers/http/http';
     BuyTicketPage,
     ShowTicketPage,
     ValidateTicketPage,
-    GetBusInfoPage
+    GetBusInfoPage,
+    ShowBusBarcodePage
   ],
   providers: [
     StatusBar,
@@ -56,7 +62,7 @@ import { HttpProvider } from '../providers/http/http';
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     Storage,
     StaticProvider,
-    HttpProvider
+    HttpProvider,
   ]
 })
 export class AppModule {}

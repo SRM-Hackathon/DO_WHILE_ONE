@@ -22,9 +22,12 @@ export class GetBusInfoPage {
   message: string;
   storage: any;
   stopsList: Array<string>;
+  Math: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner: BarcodeScanner, private provider:StaticProvider) {
+    this.Math = Math;
     this.busCode = '';
+    this.stopsList = [];
     this.storage = this.navParams.get('storage');
   }
 
@@ -35,14 +38,22 @@ export class GetBusInfoPage {
         formats: "QR_CODE",
         resultDisplayDuration: 0,
       }).then((data) => {
-        this.busCode = data.text;
+        let scanArr = data.text.split(';');
+        if (scanArr.length > 1 && scanArr[0] === 'b') {
+          this.busCode = scanArr[1];
+          this.showBusInfo();
+        } else {
+          this.busCode = 'Invalid Code Scanned';
+        }
       });
     }
   }
 
-  showBusInfo(busCode) {
-    this.provider.getBusStops(busCode).then((stopsList) => {
+  showBusInfo() {
+    this.provider.getBusStops(this.busCode).then((stopsList) => {
       this.stopsList = stopsList;
+    }).catch(() => {
+        this.busCode = 'Invalid Code Scanned';
     });
   }
 

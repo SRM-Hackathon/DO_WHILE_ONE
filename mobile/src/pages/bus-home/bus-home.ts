@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { IssueTicketPage } from '../issue-ticket/issue-ticket';
 import { ValidateTicketPage } from '../validate-ticket/validate-ticket';
+import { ShowBusBarcodePage } from '../show-bus-barcode/show-bus-barcode';
 
 /**
  * Generated class for the BusHomePage page.
@@ -55,4 +56,9 @@ export class BusHomePage {
     this.storage.persist.set('busCode', this.busCode);
   }
 
+  showBusBarcode() {
+    this.navCtrl.push(ShowBusBarcodePage, {
+      storage: this.storage
+    });
+  }
 }

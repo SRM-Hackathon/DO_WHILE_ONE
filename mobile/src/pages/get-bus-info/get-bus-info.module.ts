@@ -4,7 +4,7 @@ import { GetBusInfoPage } from './get-bus-info';
 
 @NgModule({
   declarations: [
-    GetBusInfoPage,
+    //GetBusInfoPage,
   ],
   imports: [
     IonicPageModule.forChild(GetBusInfoPage),
