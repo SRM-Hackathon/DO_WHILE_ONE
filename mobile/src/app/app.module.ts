@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { NgxQRCodeModule } from 'ngx-qrcode2';
 import { IonicStorageModule } from '@ionic/storage';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -17,6 +18,7 @@ import { ShowTicketPage } from '../pages/show-ticket/show-ticket';
 import { ValidateTicketPage } from '../pages/validate-ticket/validate-ticket';
 import { GetBusInfoPage } from '../pages/get-bus-info/get-bus-info';
 import { ShowBusBarcodePage } from '../pages/show-bus-barcode/show-bus-barcode';
+import { YourJourneyPage } from '../pages/your-journey/your-journey';
 
 import { StaticProvider } from '../providers/static/static';
 import { HttpProvider } from '../providers/http/http';
@@ -33,7 +35,8 @@ import { HttpModule } from '@angular/http';
     ShowTicketPage,
     ValidateTicketPage,
     GetBusInfoPage,
-    ShowBusBarcodePage
+    ShowBusBarcodePage,
+    YourJourneyPage
   ],
   imports: [
     BrowserModule,
@@ -53,16 +56,18 @@ import { HttpModule } from '@angular/http';
     ShowTicketPage,
     ValidateTicketPage,
     GetBusInfoPage,
-    ShowBusBarcodePage
+    ShowBusBarcodePage,
+    YourJourneyPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     BarcodeScanner,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    Storage,
+    IonicStorageModule,
     StaticProvider,
     HttpProvider,
+    LocalNotifications
   ]
 })
 export class AppModule {}

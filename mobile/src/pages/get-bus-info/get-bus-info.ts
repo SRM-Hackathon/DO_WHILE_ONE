@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { StaticProvider } from '../../providers/static/static';
+import { Md5 } from 'ts-md5/dist/md5';
+
+import { ShowTicketPage } from '../show-ticket/show-ticket';
+import { YourJourneyPage } from '../your-journey/your-journey';
 
 /**
  * Generated class for the GetBusInfoPage page.
@@ -24,11 +28,16 @@ export class GetBusInfoPage {
   stopsList: Array<string>;
   Math: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner: BarcodeScanner, private provider:StaticProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner: BarcodeScanner, private provider: StaticProvider) {
     this.Math = Math;
     this.busCode = '';
     this.stopsList = [];
     this.storage = this.navParams.get('storage');
+    let busCode = this.navParams.get('busCode');
+    if (busCode) {
+      this.busCode = busCode;
+      this.showBusInfo();
+    }
   }
 
   ionViewDidLoad() {
@@ -53,7 +62,43 @@ export class GetBusInfoPage {
     this.provider.getBusStops(this.busCode).then((stopsList) => {
       this.stopsList = stopsList;
     }).catch(() => {
-        this.busCode = 'Invalid Code Scanned';
+      this.busCode = 'Invalid Code Scanned';
+    });
+  }
+
+  buyTicket(stop, index) {
+    let cost = (Math.floor(index / 3) + 1) * 5;
+    let code = Md5.hashStr(Math.random().toString(), false).toString();
+    let from = 'Dr. T.P Ganeshan Audi...';
+    let time = new Date();
+
+    let ticketCode = 't;' + code + ';' + (time.getTime().toString())
+      + ';' + from + ';' + stop
+      + ';' + this.busCode;
+
+    console.log(ticketCode);
+
+    let userStops = [];
+    for (let s of this.stopsList) {
+      userStops.push(s);
+      if (s === stop) {
+        break;
+      }
+    }
+
+    this.storage.boughtTickets.unshift({
+      code: ticketCode,
+      time: time,
+      from: from,
+      to: stop,
+      busCode: this.busCode,
+      userStops: userStops
+    });
+
+    this.navCtrl.pop();
+
+    this.navCtrl.push(YourJourneyPage, {
+      storage: this.storage,
     });
   }
 

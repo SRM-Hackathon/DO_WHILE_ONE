@@ -21,7 +21,7 @@
     </ion-col>
   </ion-row>
 
-  <ion-list *ngIf="stopsList.length > 0">
+  <ion-list *ngIf="stopsList && stopsList.length > 0">
     <ion-item *ngFor="let stop of stopsList; let i = index;">
       <ion-row>
         <ion-col>
@@ -29,6 +29,9 @@
         </ion-col>
         <ion-col>
           Rs. {{ (Math.floor(i/3)+1) * 5 }}.00
+        </ion-col>
+        <ion-col>
+           <button ion-button color="secondary" small float-right (click)="buyTicket(stop, i)">Buy</button>
         </ion-col>
       </ion-row>
     </ion-item>

@@ -1,0 +1,25 @@
+<!--
+  Generated template for the YourJourneyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Your Journey</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <h1>{{ ticket.userStops.length }}</h1>
+  <h3> Stops Remaining </h3>
+    <ion-item *ngFor="let stop of ticket.userStops; let i = index; let lst = last;" [ngClass]="lst?'your-stop':''">
+      <ion-row>
+        <ion-col>
+          {{stop}} <div class="your-stop-text" *ngIf="lst">( Your Stop! )</div>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+</ion-content>

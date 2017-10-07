@@ -36,6 +36,11 @@ export class ValidateTicketPage {
         formats: "QR_CODE",
         resultDisplayDuration: 0,
       }).then((data) => {
+        let scanArr = data.text.split(';');
+        if (scanArr[0] === 't') {
+          this.validateExternal(scanArr);
+          return;
+        }
         this.ticketCode = data.text;
         let ticket = this.storage.issuedTickets[this.ticketCode];
 
@@ -51,6 +56,19 @@ export class ValidateTicketPage {
         }
 
       });
+    }
+  }
+
+  validateExternal(scanArr) {
+    if (scanArr[5] === this.storage.busCode) {
+      this.isValid = true;
+        this.message = 'Valid Ticket!!!';
+        this.ticketTime = scanArr[2];
+        this.ticketFrom = scanArr[3];
+        this.ticketTo = scanArr[4];
+    } else {
+      this.isValid = false;
+      this.message = 'Invalid Ticket !!!';
     }
   }
 

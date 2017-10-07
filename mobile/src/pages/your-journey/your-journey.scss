@@ -1,0 +1,22 @@
+page-your-journey {
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 4em;
+        color: #488aff;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .your-stop {
+        background-color: #488aff;
+        color: white;
+    }
+    .your-stop-text {
+        display: inline-block;
+        margin-left: 30px;
+    }
+}

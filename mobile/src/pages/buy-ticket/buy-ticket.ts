@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { GetBusInfoPage } from '../get-bus-info/get-bus-info';
+import { YourJourneyPage } from '../your-journey/your-journey';
 
 /**
  * Generated class for the BuyTicketPage page.
@@ -38,6 +40,10 @@ export class BuyTicketPage {
         this.ticketCode = data.text;
         let dataArr = this.ticketCode.split(';');
         console.log(dataArr);
+        if (dataArr[0] === 'b') {
+          this.showBusInfo(dataArr[1]);
+          return;
+        }
         this.ticketCode = dataArr[0];
         this.ticketTime = new Date(parseInt(dataArr[1]));
         this.ticketFrom = dataArr[2];
@@ -52,8 +58,21 @@ export class BuyTicketPage {
         };
         console.log(ticket);
         this.storage.boughtTickets.unshift(ticket);
+
+        this.navCtrl.pop();
+        this.navCtrl.push(YourJourneyPage, {
+          storage: this.storage,
+        });
       });
     }
+  }
+
+  showBusInfo(busCode) {
+    this.navCtrl.pop();
+    this.navCtrl.push(GetBusInfoPage, {
+      storage: this.storage,
+      busCode: busCode
+    });
   }
 
 }
