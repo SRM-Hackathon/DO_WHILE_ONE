@@ -26,6 +26,10 @@ export class YourJourneyPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad YourJourneyPage');
+
+    if (!this.ticket.userStops) {
+      return;
+    }
     this.localNotifications.clearAll();
     this.localNotifications.schedule({
       id: 1,

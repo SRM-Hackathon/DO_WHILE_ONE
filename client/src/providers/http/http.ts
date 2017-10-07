@@ -15,4 +15,8 @@ export class HttpProvider {
     console.log('Hello HttpProvider Provider');
   }
 
+  getBusStops(busCode) {
+    return this.http.get('http://10.5.58.98:3000/busStops?busCode=' + busCode);
+  }
+
 }

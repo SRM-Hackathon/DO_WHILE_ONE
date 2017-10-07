@@ -25,13 +25,13 @@
     <ion-item *ngFor="let stop of stopsList; let i = index;">
       <ion-row>
         <ion-col>
-          {{stop}}
+          {{ stop?(stop.length>20)? (stop | slice:0:17)+'...':(stop):'' }}
         </ion-col>
         <ion-col>
-          Rs. {{ (Math.floor(i/3)+1) * 5 }}.00
+          <span float-right>Rs. {{ (Math.floor(i/3)+1) * 5 }}.00</span>
         </ion-col>
         <ion-col>
-           <button ion-button color="secondary" small float-right (click)="buyTicket(stop, i)">Buy</button>
+           <button ion-button color="secondary" small float-right (click)="buyTicket(stop, i)">{{ isIssuer? 'Buy' : 'Issue' }}</button>
         </ion-col>
       </ion-row>
     </ion-item>

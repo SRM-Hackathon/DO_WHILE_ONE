@@ -7,6 +7,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { NgxQRCodeModule } from 'ngx-qrcode2';
 import { IonicStorageModule } from '@ionic/storage';
 import { LocalNotifications } from '@ionic-native/local-notifications';
+import { Toast } from '@ionic-native/toast';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -67,7 +68,8 @@ import { HttpModule } from '@angular/http';
     IonicStorageModule,
     StaticProvider,
     HttpProvider,
-    LocalNotifications
+    LocalNotifications,
+    Toast
   ]
 })
 export class AppModule {}

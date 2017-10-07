@@ -12,23 +12,27 @@ MongoClient.connect('mongodb://localhost:27017/paperless', function (err, databa
 
     lineReader.on('line', function (line) {
         let spArr = line.split('|');
+        if (!spArr || spArr.length < 1) {
+            return;
+        }
         let busNo = spArr[0].trim();
-        let start = spArr[1].replace('[', '').replace(']', '').trim();
-        let stopsCSV = spArr[spArr.length - 1];
-        let end = spArr[spArr.length - 2].replace('[', '').replace(']', '').trim();
+        let start = spArr[1].replace(/\[/g, '').replace(/\]/g, '').trim();
+        let stopsCSV = spArr[spArr.length - 2];
+        let end = spArr[spArr.length - 3].replace(/\[/g, '').replace(/\]/g, '').trim();
 
         let stopsArr = stopsCSV.split(',').map((val) => val.trim());
 
+        stopsArr.unshift(start);
+        stopsArr.push(end);
+
+        let busRecord = {
+            bus: busNo,
+            stops: stopsArr
+        }
+        console.log(busRecord)
+
+        db.collection('busses').insert(busRecord)
+
     });
-
-    let busCode = '12A';
-    db.collection('busses').find({
-        bus: busCode
-    }).toArray(function (err, result) {
-        if (err) throw err;
-        console.log(result);
-
-        db.close();
-    })
 
 })

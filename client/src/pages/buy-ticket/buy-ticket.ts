@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { GetBusInfoPage } from '../get-bus-info/get-bus-info';
 import { YourJourneyPage } from '../your-journey/your-journey';
+import { Toast } from '@ionic-native/toast';
 
 /**
  * Generated class for the BuyTicketPage page.
@@ -25,7 +26,7 @@ export class BuyTicketPage {
   busCode: string;
   storage: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner:BarcodeScanner) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner:BarcodeScanner, private toast: Toast) {
     this.ticketCode = '';
     this.storage = this.navParams.get('storage');
   }
@@ -54,15 +55,24 @@ export class BuyTicketPage {
           time: this.ticketTime,
           from: this.ticketFrom,
           to: this.ticketTo,
-          busCode: this.busCode
+          busCode: this.busCode,
+          userStops: []
         };
         console.log(ticket);
         this.storage.boughtTickets.unshift(ticket);
 
+        this.toast.show(`Ticket Purchase Successful !`, '5000', 'bottom').subscribe(
+          toast => {
+            console.log(toast);
+          }
+        );
+
+        /*
         this.navCtrl.pop();
         this.navCtrl.push(YourJourneyPage, {
           storage: this.storage,
         });
+        */
       });
     }
   }

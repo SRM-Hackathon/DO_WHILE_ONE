@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {Md5} from 'ts-md5/dist/md5';
+import { GetBusInfoPage } from '../get-bus-info/get-bus-info';
 
 /**
  * Generated class for the IssueTicketPage page.
@@ -24,13 +25,19 @@ export class IssueTicketPage {
   code: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.storage = this.navParams.get('storage');
+    this.showBusInfo(this.storage.busCode);
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad IssueTicketPage');
+  }
+
+  buyTicket() {
     this.ticketTime = new Date();
     this.ticketFrom = 'Stop A';
-    this.ticketTo = 'Stop C';
 
     this.code = Md5.hashStr(Math.random().toString(), false).toString();
-    
-    this.storage = this.navParams.get('storage');
     
     this.ticketCode =  this.code + ';' + (this.ticketTime.getTime().toString())
       + ';' + this.ticketFrom + ';' + this.ticketTo
@@ -46,8 +53,17 @@ export class IssueTicketPage {
     };
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad IssueTicketPage');
+  showBusInfo(busCode) {
+    let self = this;
+    this.navCtrl.push(GetBusInfoPage, {
+      storage: this.storage,
+      busCode: busCode,
+      isIssuer: true,
+      buyAction: (destStop) => {
+        self.ticketTo = destStop;
+        self.buyTicket();
+      }
+    });
   }
 
 }

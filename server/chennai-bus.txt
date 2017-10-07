@@ -68,4 +68,3 @@ PP56D |[[Manali, Chennai|Manali]] |[[Broadway, Chennai|Broadway]] |Manali Market
 121B |[[Minjur]] |[[CMBT]] |Napalayam, [[Manali New Town|Manali]] New Town, Manali Market, Mathur, Madhavaram Milk Colony, Moolakadai, Reteri, Lucas, Anna Nagar West, Thirumangalam |-
 121C |[[Ennore]] |[[CMBT]] |Manali Market, Mathur, Madhavaram Milk Colony, Moolakadai, Reteri, Lucas, Anna Nagar West, Thirumangalam |-
 121D |[[Manali New Town]] |[[CMBT]] |Andarkuppam, Manali Market, Mathur, Madhavaram Milk Colony, Moolakadai, Reteri, Lucas, Anna Nagar West, Thirumangalam 
-

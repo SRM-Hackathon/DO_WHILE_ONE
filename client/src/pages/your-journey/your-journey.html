@@ -13,13 +13,15 @@
 </ion-header>
 
 <ion-content padding>
-  <h1>{{ ticket.userStops.length }}</h1>
-  <h3> Stops Remaining </h3>
-    <ion-item *ngFor="let stop of ticket.userStops; let i = index; let lst = last;" [ngClass]="lst?'your-stop':''">
-      <ion-row>
-        <ion-col>
-          {{stop}} <div class="your-stop-text" *ngIf="lst">( Your Stop! )</div>
-        </ion-col>
-      </ion-row>
-    </ion-item>
+  <div *ngIf="ticket.userStops">
+    <h1>{{ ticket.userStops.length }}</h1>
+    <h3> Stops Remaining </h3>
+      <ion-item *ngFor="let stop of ticket.userStops; let i = index; let lst = last;" [ngClass]="lst?'your-stop':''">
+        <ion-row>
+          <ion-col>
+            {{stop}} <div class="your-stop-text" *ngIf="lst">( Your Stop! )</div>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+  </div>
 </ion-content>
