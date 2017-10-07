@@ -15,5 +15,16 @@
 
 <ion-content padding>
 
-   Bus Code: {{busCode}}
+  <ion-row>
+    <ion-col>
+      Bus Code: {{busCode}}
+    </ion-col>
+  </ion-row>
+
+  <ion-list *ngIf="stopsList.lenght > 0">
+    <ion-item *ngFor="let stop of stopsList; let i = index;">
+      {{stop}}
+    </ion-item>
+  </ion-list>
+
 </ion-content>

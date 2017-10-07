@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { StaticProvider } from '../../providers/static/static';
 
 /**
  * Generated class for the GetBusInfoPage page.
@@ -20,8 +21,9 @@ export class GetBusInfoPage {
   isValid: boolean;
   message: string;
   storage: any;
+  stopsList: Array<string>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner: BarcodeScanner) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner: BarcodeScanner, private provider:StaticProvider) {
     this.busCode = '';
     this.storage = this.navParams.get('storage');
   }
@@ -36,6 +38,12 @@ export class GetBusInfoPage {
         this.busCode = data.text;
       });
     }
+  }
+
+  showBusInfo(busCode) {
+    this.provider.getBusStops(busCode).then((stopsList) => {
+      this.stopsList = stopsList;
+    });
   }
 
 }

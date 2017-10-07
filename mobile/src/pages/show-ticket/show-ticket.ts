@@ -19,6 +19,7 @@ export class ShowTicketPage {
   ticketTime: Date;
   ticketFrom: String;
   ticketTo: String;
+  busCode: string;
   storage: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -32,6 +33,7 @@ export class ShowTicketPage {
       this.ticketTime = latestTicket.time;
       this.ticketFrom = latestTicket.from;
       this.ticketTo = latestTicket.to;
+      this.busCode = latestTicket.busCode;
     }
   }
 
